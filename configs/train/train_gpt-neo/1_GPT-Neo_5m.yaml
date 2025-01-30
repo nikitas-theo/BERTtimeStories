@@ -1,0 +1,10 @@
+########## load data dir ##########
+cached_data_file: ./data/processed/tinystories/train_5M/TinyStoriesV2-GPT4-train_5M_proc_segmented_cached_{seq_length}.txt
+cached_valid_data_file: ./data/processed/tinystories/train_5M/TinyStoriesV2-GPT4-valid_5M_proc_segmented_cached_{seq_length}.txt
+tokenizer_path: ./outputs/tokenizers/tinystories/train_5M/tokenizer.json
+######### training run params ###########
+run_name: '1_run_gpt-neo_5m_reg' 
+######### eval & log ###########
+model_config_file: ./configs/models/gpt-neo/dropout_4.yaml
+weight_decay: 0.2
+vocab_size: 6411

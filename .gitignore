@@ -1,0 +1,13 @@
+__pycache__/
+/data/*
+!/data/prompts/
+/tokenizers/
+/checkpoints/
+/.ruff_cache/
+/wandb/
+/cache/
+/outputs/
+!/**/.gitkeep
+ruff_cache
+.vscode/
+evaluation-pipeline-2024

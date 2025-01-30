@@ -1,0 +1,156 @@
+---
+
+
+
+# for local models include path up to checkpoint
+# after running `python -m convert_HF` to convert the model to HF format
+
+# model_name corresponds to the results folder name for this model
+# model_type can be either mlm (masked language model) or hf (GPT-like autoregressive model)
+
+# - model_path: ../outputs/models/gpt_neo_5M/checkpoint/
+#   model_name: GPT-Neo-5m_local
+#   model_type: hf
+
+
+# e.g., 
+# 22
+- model_path: nikitastheo/GPT-Neo-50m
+  model_name: GPT-Neo-50m
+  model_type: hf
+# when running the `evaluate_all.py` script with a GPT-Neo model, include --eval_tasks "ewok, blimp" to exclude "glue" from the evaluation
+# as the code is only designed to evaluate LTG-BERT on GLUE tasks. 
+
+
+# the models that follow were evaluated as part of this paper
+
+#######################################################
+# # 1
+# - model_path: nikitastheo/LTG-BERT-baby100m-nogen
+#   model_name: LTG-BERT-baby100m-nogen
+#   model_type: mlm
+
+# # 2
+# - model_path: nikitastheo/LTG-BERT-baby10m-nogen
+#   model_name: LTG-BERT-baby10m-nogen
+#   model_type: mlm
+
+# # 3
+# - model_path: nikitastheo/LTG-BERT-baby50m-tiny50m-greedy
+#   model_name: LTG-BERT-baby50m-tiny50m-greedy
+#   model_type: mlm
+
+# # 4
+# - model_path: nikitastheo/LTG-BERT-baby50m-tiny50m-nogen
+#   model_name: LTG-BERT-baby50m-tiny50m-nogen
+#   model_type: mlm
+
+# # 5
+# - model_path: nikitastheo/LTG-BERT-baby50m-tiny50m-nucleus10
+#   model_name: LTG-BERT-baby50m-tiny50m-nucleus10
+#   model_type: mlm
+
+# # 6
+# - model_path: nikitastheo/LTG-BERT-baby50m-tiny50m-nucleus1-balanced
+#   model_name: LTG-BERT-baby50m-tiny50m-nucleus1-balanced
+#   model_type: mlm
+
+# # 7
+# - model_path: nikitastheo/LTG-BERT-baby50m-tiny50m-nucleus5
+#   model_name: LTG-BERT-baby50m-tiny50m-nucleus5
+#   model_type: mlm
+
+# # 8
+# - model_path: nikitastheo/LTG-BERT-baby5m-tiny5m-greedy
+#   model_name: LTG-BERT-baby5m-tiny5m-greedy
+#   model_type: mlm
+
+# # 9 
+# - model_path: nikitastheo/LTG-BERT-baby5m-tiny5m-nogen
+#   model_name: LTG-BERT-baby5m-tiny5m-nogen
+#   model_type: mlm
+
+# # 10
+# - model_path: nikitastheo/LTG-BERT-baby5m-tiny5m-nucleus1
+#   model_name: LTG-BERT-baby5m-tiny5m-nucleus1
+#   model_type: mlm
+
+# # 11
+# - model_path: nikitastheo/LTG-BERT-baby5m-tiny5m-nucleus10
+#   model_name: LTG-BERT-baby5m-tiny5m-nucleus10
+#   model_type: mlm
+
+# # 12
+# - model_path: nikitastheo/LTG-BERT-baby5m-tiny5m-nucleus5
+#   model_name: LTG-BERT-baby5m-tiny5m-nucleus5
+#   model_type: mlm
+
+# # 13
+# - model_path: nikitastheo/LTG-BERT-tiny100m-nogen
+#   model_name: LTG-BERT-tiny100m-nogen
+#   model_type: mlm
+
+# # 14
+# - model_path: nikitastheo/LTG-BERT-tiny100m-greedy
+#   model_name: LTG-BERT-tiny100m-greedy
+#   model_type: mlm
+
+# # 15
+# - model_path: nikitastheo/LTG-BERT-tiny10m-nogen
+#   model_name: LTG-BERT-tiny10m-nogen
+#   model_type: mlm
+
+# # 16
+# - model_path: nikitastheo/LTG-BERT-tiny10m-greedy
+#   model_name: LTG-BERT-tiny10m-greedy
+#   model_type: mlm
+
+# # 17
+# - model_path: nikitastheo/BERTtime-Stories-100m-nucleus-1
+#   model_name: BERTtime-Stories-100m-nucleus-1
+#   model_type: mlm
+
+# # 18
+# - model_path: nikitastheo/BERTtime-Stories-10m-nucleus-1-balanced
+#   model_name: BERTtime-Stories-10m-nucleus-1-balanced
+#   model_type: mlm
+
+# # 19
+# - model_path: nikitastheo/GPT-Neo-5m
+#   model_name: GPT-Neo-5m
+#   model_type: hf
+
+# # 20
+# - model_path: nikitastheo/GPT-Neo-10m
+#   model_name: GPT-Neo-10m
+#   model_type: hf
+
+# # 21
+# - model_path: nikitastheo/GPT-Neo-25m
+#   model_name: GPT-Neo-25m
+#   model_type: hf
+
+# # 22
+# - model_path: nikitastheo/GPT-Neo-50m
+#   model_name: GPT-Neo-50m
+#   model_type: hf
+
+# # 23
+# - model_path: nikitastheo/GPT-Neo-75m
+#   model_name: GPT-Neo-75m
+#   model_type: hf
+
+# # 24
+# - model_path: nikitastheo/GPT-Neo-100m
+#   model_name: GPT-Neo-100m
+#   model_type: hf
+
+# # 25
+# - model_path: nikitastheo/GPT-Neo-440m
+#   model_name: GPT-Neo-440m
+#   model_type: hf
+
+# # 26
+# - model_path: roneneldan/TinyStories-33M
+#   model_name: TinyStories-33M
+#   model_type: hf

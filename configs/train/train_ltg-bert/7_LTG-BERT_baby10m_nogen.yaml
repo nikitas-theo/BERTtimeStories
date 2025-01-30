@@ -1,0 +1,6 @@
+---
+###########
+cached_data_file: ./data/processed/babylm/train_10M/all_segmented_cached_{seq_length}.txt
+cached_valid_data_file: ./data/processed/babylm/train_10M/DEV_all_segmented_cached_{seq_length}.txt
+tokenizer_path: ./outputs/tokenizers/babylm/train_10M/tokenizer.json
+run_name: '7_run_LTG-BERT_baby10m_nogen'

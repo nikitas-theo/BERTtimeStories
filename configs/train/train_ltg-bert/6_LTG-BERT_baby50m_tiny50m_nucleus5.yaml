@@ -1,0 +1,9 @@
+---
+########## load data dir ##########
+cached_data_file: >
+  ./data/processed/joint/joint_50M_50M_nucleus_5/dataset_babylm_sampled_50M_cached_{seq_length}.txt,
+  ./data/processed/joint/joint_50M_50M_nucleus_5/dataset_tinystories_50M_with_PAR_cached_{seq_length}.txt,
+  ./data/processed/joint/joint_50M_50M_nucleus_5/dataset_generated_proc_segmented_cached_{seq_length}.txt
+cached_valid_data_file: ./data/processed/joint/joint_50M_50M_nucleus_5/DEV_all_segmented_cached_{seq_length}.txt
+tokenizer_path: ./outputs/tokenizers/joint/joint_50M_50M_nucleus_5/tokenizer.json
+run_name: '6_run_LTG-BERT_baby50m_tiny50m_nucleus5'

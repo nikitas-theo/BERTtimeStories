@@ -1,0 +1,2 @@
+split: train_10M
+vocab_size: 6144

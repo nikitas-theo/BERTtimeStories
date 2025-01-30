@@ -1,0 +1,45 @@
+---
+# _name_or_path: roneneldan/TinyStories-33M
+# activation_function: gelu_new
+# architectures:
+# - GPTNeoForCausalLM
+attention_dropout: 0.4
+# attention_layers:
+# - global
+# - local
+# - global
+# - local
+# attention_types:
+# - - - global
+#     - local
+#   - 2
+# bos_token_id: 50256
+classifier_dropout: 0.4
+embed_dropout: 0.4
+# eos_token_id: 50256
+# gradient_checkpointing: false
+# hidden_size: 768
+# initializer_range: 0.02
+# intermediate_size: 
+# layer_norm_epsilon: 1.0e-05
+# max_position_embeddings: 2048
+# model_type: gpt_neo
+# num_heads: 16
+# num_layers: 4
+resid_dropout: 0.4
+# summary_activation: 
+summary_first_dropout: 0.3
+# summary_proj_to_labels: true
+# summary_type: cls_index
+# summary_use_proj: true
+# torch_dtype: float32
+# transformers_version: 4.42.3
+# use_cache: true
+# vocab_size: 50257
+# window_size: 256
+eos_token_id: 1
+bos_token_id: 1
+num_heads: 16
+num_layers: 4
+vocab_size: 16384
+max_position_embeddings: 512

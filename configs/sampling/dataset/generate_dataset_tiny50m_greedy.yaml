@@ -1,0 +1,18 @@
+---
+eval_device: cuda
+eval_batch_size: 32
+eval_max_length: 512
+eval_num_return_sequences: 1
+eval_do_sample: false
+eval_truncation: true
+eval_temperature: Null
+eval_top_k: Null
+eval_top_p: Null
+##################
+prob_min: 0.15
+prob_max: 0.30
+seed: 42
+filetype: json
+sample_from: "./data/processed/tinystories/train_50M/TinyStoriesV2-GPT4-train_50M_proc.txt"
+models: gpt_neo_50M
+folder_name: greedy_gpt_neo_50M

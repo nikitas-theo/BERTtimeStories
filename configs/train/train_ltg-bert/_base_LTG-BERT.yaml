@@ -1,0 +1,46 @@
+---
+# Base config for training LTG-BERT
+#########################################
+LEGACY: False
+######### training run params ###########
+seq_length: 128
+vocab_size: 16384 # 2 ** 14
+max_steps: 20_000
+batch_size: 80
+gradient_accumulation_steps: 32
+optimizer: adamW
+eps: 1.0e-06 
+betas: 
+  - 0.9 
+  - 0.98
+lr: 6.0e-4
+min_lr:  6.0e-5
+lr_schedule: cosine
+warmup_steps_proportion: 0.016
+weight_decay: 0.1
+grad_clip: 2.0 
+long_after: Null
+mask_p: 0.15
+short_p : 0.1
+######### training script params ###########
+load_checkpoint: Null
+output_dir: ./outputs/models/
+model_config_file: ./configs/models/ltg-bert/base.yaml 
+seed: 42
+wandb_log: True
+wandb_offline: False
+wandb_project: 'babylm'
+model_type: 'ltg-bert'
+device: cuda
+compile: False
+######### eval & log ###########
+eval_every: 250 # 
+eval_iters: 100
+print_every: 1
+############################
+num_workers: 2
+pin_memory: False
+mixed_precision: True
+DEBUG: False
+always_save_checkpoint: True
+random_sampling: False

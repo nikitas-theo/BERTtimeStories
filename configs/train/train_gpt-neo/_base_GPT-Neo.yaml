@@ -1,0 +1,50 @@
+---
+# Base config for training GPT-Neo on TinyStories
+############ TinyStories defaults ############
+# lr = 5e-4, 
+# lr_schedule = constant
+# wd=0.1, 
+# adam_beta1=0.9, 
+# adam_beta2 = 0.95, 
+# context_length=512, 
+# batch_size=80, 
+# gradient_accumulation_steps=16
+########## load data dir ##########
+#########################################
+LEGACY: False
+######### training run params ###########
+seq_length: 512
+batch_size: 24
+max_steps: 15_000 
+optimizer: adamW
+betas: 
+  - 0.9 
+  - 0.95
+eps: 1.0e-08 # adam/adamW default
+lr: 5.e-4 # tinystories original
+min_lr: 5.e-5 # chinchilla
+lr_schedule: cosine
+warmup_steps_proportion: 0.016 # 1.6% of max_steps
+gradient_accumulation_steps: 32  # keep in line with TinyStories, 2 * 16
+grad_clip: 2.0 # ltg-bert
+######### training script params ###########
+long_after: Null
+load_checkpoint: Null
+output_dir: ./outputs/models/
+seed: 42
+wandb_log: True
+wandb_offline: False
+wandb_project: 'babylm'
+model_type: 'gpt'
+device: cuda
+always_save_checkpoint: False
+compile: False
+######### eval & log ###########
+eval_every: 40 # 
+eval_iters: 100
+print_every: 1
+############################
+num_workers: 2                         
+pin_memory: False
+DEBUG: False
+mixed_precision: True

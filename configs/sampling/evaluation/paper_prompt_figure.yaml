@@ -1,0 +1,19 @@
+---
+eval_device: cuda
+eval_batch_size: 32
+eval_max_length: 512
+eval_num_return_sequences: 1
+eval_do_sample: false
+eval_truncation: true
+eval_temperature: Null
+eval_top_k: Null
+eval_top_p: Null
+##################
+num_stories: 10
+prob_min: 0.15
+prob_max: 0.30
+seed: 42
+folder_name: paper_figure_50M
+models: 'gpt_neo_50M'
+sample_from:  ./data/prompts/paper_figure.yaml 
+is_prompt: True

@@ -1,0 +1,14 @@
+babylm_path: data/processed/babylm/train_10M/all_segmented.txt
+sample_babylm: 5_000_000
+millions_babylm: 5
+
+# already sampled
+tinystories_path: data/processed/tinystories/train_5M/TinyStoriesV2-GPT4-train_5M_proc_segmented.txt
+sample_tinystories: Null
+millions_tiny: 5
+
+generated_data_in_path: data/raw/generated/nucleus_5_gpt_neo_5M/generated.json
+val_path: ./data/processed/babylm/dev/all_segmented.txt
+vocab_size: 6144
+
+name_extra: nucleus_5

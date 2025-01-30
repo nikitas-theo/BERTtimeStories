@@ -1,0 +1,8 @@
+---
+###########
+cached_data_file: >
+  ./data/processed/tinystories/train_10M/TinyStoriesV2-GPT4-train_10M_proc_segmented_with_PAR_cached_128.txt,
+  ./data/processed/tinystories/train_10M/dataset_generated_proc_segmented_cached_128.txt
+cached_valid_data_file: ./data/processed/tinystories/train_10M/TinyStoriesV2-GPT4-valid_10M_proc_segmented_with_PAR_cached_128.txt
+tokenizer_path: ./outputs/tokenizers/tinystories/train_10M/tokenizer_ltg_bert.json
+run_name: '9_LTG-BERT_tiny10m_greedy'

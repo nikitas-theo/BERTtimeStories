@@ -1,0 +1,16 @@
+---
+eval_device: cuda
+eval_batch_size: 32
+eval_max_length: 512
+eval_num_return_sequences: 1
+eval_do_sample: false
+eval_truncation: true
+eval_temperature: null
+eval_top_k: null
+eval_top_p: null
+##################################
+num_stories: 100
+prob_min: 0.15
+prob_max: 0.30
+seed: 42
+filetype: json

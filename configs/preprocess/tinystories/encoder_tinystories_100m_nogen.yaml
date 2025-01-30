@@ -1,0 +1,3 @@
+millions_tiny: 100
+vocab_size: 16384
+generated_data_path: Null
